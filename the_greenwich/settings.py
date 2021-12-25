@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
+CSRF_TRUSTED_ORIGINS = ["https://8000-pink-pheasant-41g8cg7b.ws-eu25.gitpod.io"]
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'home',
+    'booking',
 ]
 
 MIDDLEWARE = [
