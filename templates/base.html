@@ -13,15 +13,29 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
+                <!-- here goes the logo -->
                 <div class="col">
-                    <h1>I am base.html</h1>
+                    <h1>The Greenwich</h1>
                 </div>
                 <div class="col">
-                    <ul>
-                        <li>Hello I am link #1</li>
+                    <!-- Beginning of navigation bar -->
+                    <ul class="navbar">
+                        <li>
+                            <a href="#">Book Now</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'booking' %}">My Bookings</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'info' %}">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'menu' %}">Menu</a>
+                        </li>
                     </ul>
+                    <!-- End of navigation bar -->
                 </div>
             </div>
         </div>
@@ -30,7 +44,7 @@
     <!-- Content goes here -->
     {% endblock%}
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <!-- Copyright -->
