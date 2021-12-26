@@ -19,9 +19,9 @@
                 <div class="col">
                     <h1>The Greenwich</h1>
                 </div>
-                <div class="col">
+                <div class="col nav_bar">
                     <!-- Beginning of navigation bar -->
-                    <ul class="navbar">
+                    <ul>
                         <li>
                             <a href="#">Book Now</a>
                         </li>
@@ -40,18 +40,18 @@
             </div>
         </div>
     </header>
-    {% block content%}
-    <!-- Content goes here -->
-    {% endblock%}
+    <section class="container">
+        {% block content%}
+        <!-- Content goes here -->
+        {% endblock%}
+    </section>
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <!-- Copyright -->
-                    <div>
                         © 2021 Copyright:
                         <a href="#">Code Institute Milestone Project 4</a>
-                    </div>
                     <!-- Copyright -->
                 </div>
             </div>            
