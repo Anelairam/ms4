@@ -2,4 +2,26 @@
 
 {% block content %}
     <h2>Hello I am booking</h2>
+    <div class="container">
+        <div class="row description">
+          <h1>I am the profile page change me folder</h1>
+          <p>In this page (you=name) as authenticated user can see and interact with your bookings</p>
+        </div>
+          {% for booking in bookings%}
+            <div class="row">
+              <div class="col">
+                <h2 class="title">{{ booking.booked_date|date:'l dS M Y' }} at {{ booking.booked_time|date:'H:i' }}</h2>
+                <div class="row book_information">
+                  <p>Booked for: {{ booking.booked_time}}</p>
+                  <p>Booked at: {{ booking.booked_date}}</p>
+                  <p>Booked on: {{ booking.created_on}}</p>
+                  <p>Updated on: {{ booking.updated_on}}</p>
+                  <p>Guests: {{ booking.guests_num}}</p>
+                  <p>In case of food allergies or any other information that you would like to be aware please 
+                      do not hesitate to contact us</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+          {% endfor %}
 {% endblock %}

@@ -6,10 +6,10 @@ from .models import Book
 
 # Renders the booking data into the booking template
 def booking(request):
-    # bookings = Book.objects.all()
-    # context = {
-    #     'bookings': bookings
-    # }
-    # return render(request, 'booking.html', context)
-    return render(request, 'booking/booking.html')
+    bookings = Book.objects.all()
+    context = {
+        'bookings': bookings
+    }
+    return render(request, 'booking/booking.html', context)
+    # return render(request, 'booking/booking.html') it works
 
