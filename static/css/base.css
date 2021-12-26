@@ -4,9 +4,33 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: lightblue;
+}
+
+.head_row {
+    background-color: #323232;
+    color: white;
 }
 
 .navbar{
     display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for booking.html */
+.title {
+    text-decoration: underline;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: white;
 }

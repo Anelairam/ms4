@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row head_row">
                 <!-- here goes the logo -->
                 <div class="col">
                     <h1>The Greenwich</h1>
@@ -29,10 +29,10 @@
                             <a href="{% url 'booking' %}">My Bookings</a>
                         </li>
                         <li>
-                            <a href="{% url 'info' %}">Contact Us</a>
+                            <a href="{% url 'menu' %}">Menu</a>                            
                         </li>
                         <li>
-                            <a href="{% url 'menu' %}">Menu</a>
+                            <a href="{% url 'info' %}">Contact Us</a>
                         </li>
                     </ul>
                     <!-- End of navigation bar -->
@@ -54,9 +54,10 @@
                     </div>
                     <!-- Copyright -->
                 </div>
-            </div>
-            
+            </div>            
         </div>
       </footer>
+      <!-- Custom javascript -->
+      <script src="{% static 'js/base.js' %}"></script>
 </body>
 </html>
