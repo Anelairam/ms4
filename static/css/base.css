@@ -34,3 +34,11 @@ li a {
     cursor: pointer;
     color: white;
 }
+
+.book_information {
+    display: none;
+}
+
+.info_display {
+    display: flex;
+}
