@@ -2,4 +2,72 @@
 
 {% block content %}
     <h2>Hello I am menu</h2>
+    <div class="container">
+        <div class="row page_description">
+            <div class="col">
+                <h1>The greenwich menu</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Pellentesque gravida odio sem, a vestibulum ipsum suscipit et. 
+                    Sed ut diam purus. Morbi aliquet dictum magna, ac placerat mi ullamcorper in. 
+                    In vulputate placerat velit, ut euismod urna semper at. 
+                    Proin tempus maximus ipsum eu tincidunt. Maecenas mattis tempus diam, ac tempor ligula vestibulum imperdiet. 
+                    Nullam bibendum non mi ac ultricies. Donec vestibulum iaculis est sed tempus.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Starters</h2>
+                {% for menu in menus %}
+                    {% if menu.menu_category == 0 %}
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title"> {{ menu.title}} </h2>
+                                <div class="dish_info">
+                                    <p> {{ menu.components }}</p>
+                                    <p>{{ menu.price}} €</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Mains</h2>
+                {% for menu in menus %}
+                    {% if menu.menu_category == 1 %}
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title"> {{ menu.title}} </h2>
+                                <div class="dish_info">
+                                    <p> {{ menu.components }}</p>
+                                    <p>{{ menu.price}} €</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Desserts</h2>
+                {% for menu in menus %}
+                    {% if menu.menu_category == 2 %}
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title"> {{ menu.title}} </h2>
+                                <div class="dish_info">
+                                    <p> {{ menu.components }}</p>
+                                    <p>{{ menu.price}} €</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
