@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'booking',
     'menu',
     'info',
-    'new_booking',
+    'booknow',
 ]
 
 SITE_ID = 1
