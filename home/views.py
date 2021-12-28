@@ -5,5 +5,5 @@ from allauth.account.forms import LoginForm
 
 
 def index(request):
-    signupdisplay = CustomSignupForm
-    return render(request, 'home/index.html', context)
+    # signupdisplay = CustomSignupForm
+    return render(request, 'home/index.html',)
