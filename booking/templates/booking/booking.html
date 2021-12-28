@@ -15,7 +15,7 @@
                   <p>Booked for: {{ booking.booked_time}}</p>
                   <p>Booked at: {{ booking.booked_date}}</p>
                   <p>Booked on: {{ booking.created_on}}</p>
-                  <p>Updated on: {{ booking.updated_on}}</p>
+                  <!-- <p>Updated on: {{ booking.updated_on}}</p> -->
                   <p>Guests: {{ booking.guests_num}}</p>
                   <p>In case of food allergies or any other information that you would like to be aware please 
                       do not hesitate to contact us</p>
@@ -24,5 +24,26 @@
               <hr>
             </div>
           {% endfor %}
+          {% for test in tests %}
+            <div class="row">
+              <div class="col">
+                <h2 class="title">{{ test.title }} </h2>
+              </div>
+              <hr>
+            </div>
+          {% endfor %}
       </div>
+
+      <form method="POST" action="{% url 'booking' %}">
+        {% csrf_token %}
+        <div>
+          <label for="title">Add title: </label>
+          <input type="text" id="title_id" name="title">
+        </div>
+        <!-- <div>
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date_item">
+        </div> -->
+        <button type="submit"> Add tittle</button>
+      </form>
 {% endblock %}
