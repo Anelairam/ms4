@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from the_greenwich.forms import CustomSignupForm
-from allauth.account.forms import LoginForm
-# Create your views here.
+from .forms import MyCustomLoginForm, MySignupForm
 
 
 def index(request):
+    context = {
+        'login_form': MyCustomLoginForm(), 
+        'signup_form': MySignupForm()
+    }
     # signupdisplay = CustomSignupForm
-    return render(request, 'home/index.html',)
+    return render(request, 'home/index.html',context)

@@ -22,4 +22,3 @@ def booking(request):
     }
     return render(request, 'booking/booking.html', context)
     # return render(request, 'booking/booking.html') it works
-
