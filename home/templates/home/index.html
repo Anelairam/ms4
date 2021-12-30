@@ -2,9 +2,24 @@
 
 {% block content %}
     <div>
-        {{ login_form }}
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            {{ login_form.as_p }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="primaryAction" type="submit">Login</button>
+        </form>
     </div>
     <div>
-        {{ signup_form }}
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+            {{ signup_form.as_p}}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button type= "submit">Sign up </button>
+          </form>
+        
     </div>
 {% endblock %}
