@@ -27,7 +27,7 @@
           {% for test in tests %}
             <div class="row">
               <div class="col">
-                <h2 class="title">{{ test.title }} </h2>
+                <h2 class="title">{{ test.title }}, {{ test.date }} </h2>
               </div>
               <hr>
             </div>
@@ -40,10 +40,10 @@
           <label for="title">Add title: </label>
           <input type="text" id="title_id" name="title">
         </div>
-        <!-- <div>
+        <div>
           <label for="date">Date:</label>
           <input type="date" name="date" id="date_item">
-        </div> -->
+        </div>
         <button type="submit"> Add tittle</button>
       </form>
 {% endblock %}
