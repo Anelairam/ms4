@@ -46,7 +46,8 @@
         </div>
         <div>
           <label for="time">Time:</label>
-          <input type="time" name="time" id="time_item" value="{{TestForms.time|time:'h i A'}}">
+          <input type="time" name="time" id="time_item" max='23:00' min='11:00' value="{{TestForms.time|time:'h i A'}}">
+          <p>Bookings take place from 11AM to 11PM</p>
         </div>
         <button type="submit"> Add tittle</button>
       </form>
