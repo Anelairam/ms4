@@ -27,7 +27,7 @@
           {% for test in tests %}
             <div class="row">
               <div class="col">
-                <h2 class="title">{{ test.title }}, {{ test.date }} </h2>
+                <h2 class="title">{{ test.title }}, {{ test.date }}, {{ test.time }} </h2>
               </div>
               <hr>
             </div>
@@ -42,7 +42,11 @@
         </div>
         <div>
           <label for="date">Date:</label>
-          <input type="date" name="date" id="date_item">
+          <input type="date" name="date" id="date_item" value="{{TestForms.date|date:'Y-m-d'}}">
+        </div>
+        <div>
+          <label for="time">Time:</label>
+          <input type="time" name="time" id="time_item" value="{{TestForms.time|time:'h i A'}}">
         </div>
         <button type="submit"> Add tittle</button>
       </form>

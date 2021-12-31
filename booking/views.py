@@ -9,8 +9,9 @@ import datetime
 def booking(request):
     if request.method == 'POST':
         new_title = request.POST.get('title')
-        # new_date = request.POST.get(date('date'))
-        TestForms.objects.create(title=new_title)
+        new_date = request.POST.get('date')
+        new_time = request.POST.get('time')
+        TestForms.objects.create(title=new_title, date=new_date, time=new_time)
         return redirect('booking')
     else:
         print(request.GET)

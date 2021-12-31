@@ -32,4 +32,5 @@ class Book(models.Model):
 class TestForms(models.Model):
     title = models.CharField(max_length=200, unique=True)
     date = models.DateField()
+    time = models.TimeField(null=True)
 
