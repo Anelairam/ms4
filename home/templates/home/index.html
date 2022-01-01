@@ -4,7 +4,12 @@
 <div class="container index_wrapper">
     <div class="row">
         <div class="col">
-            <div id="login_container">
+            <div class="tab">
+                <button class="tablinks">Login</button>
+                <button class="tablinks">Sign Up</button>              
+            </div>
+            <div id="login_container" class="tabcontent">
+                <h3>Login</h3>
                 <form class="login" method="POST" action="{% url 'account_login' %}">
                     {% csrf_token %}
                     {{ login_form.as_p }}
@@ -14,9 +19,8 @@
                     <button class="primaryAction" type="submit">Login</button>
                 </form>
             </div>
-        </div>
-        <div class="col">
-            <div id="singup_container">
+            <div id="singup_container" class="tabcontent">
+                <h3>Sign Up</h3>
                 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                     {% csrf_token %}
                     {{ signup_form.as_p}}
