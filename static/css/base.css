@@ -66,3 +66,22 @@ footer {
 .info_display {
     display: flex;
 }
+
+/* Styles for index */
+.index_wrapper {
+    background-color: rgb(59, 177, 48);
+    margin-top: 25px;
+    position: relative;
+}
+
+/* login styles */
+#login_container {
+    background-color: burlywood;
+    width: 80%;
+}
+
+/* signup styles */
+#singup_container {
+    background-color: burlywood;
+    width: 80%;
+}

@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
+<div class="container index_wrapper">
     <div class="row">
         <div class="col">
-            <div>
+            <div id="login_container">
                 <form class="login" method="POST" action="{% url 'account_login' %}">
                     {% csrf_token %}
                     {{ login_form.as_p }}
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="col">
-            <div>
+            <div id="singup_container">
                 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                     {% csrf_token %}
                     {{ signup_form.as_p}}
