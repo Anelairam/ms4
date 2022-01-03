@@ -1,5 +1,7 @@
 var book_title = document.getElementsByClassName("title");
-var tablink = document.getElementsByClassName("tablinks");
+var login_tab = document.getElementById("login_tablink");
+var signup_tab = document.getElementById("signup_tablink");
+var tablinks = document.getElementsByClassName("tablinks");
 var login = document.getElementById("login_container");
 var signup = document.getElementById("signup_container");
 
@@ -10,10 +12,6 @@ for (var i=0; i<= book_title.length; i++){
     });
 }
 
-for (var i=0; i<= tablink.length; i++){
-    tablink[i].addEventListener("click", function(){
-        if (i == 0){
-            login.style.display = "block";
-        }
-    });
+function activeTab(btn_name){
+    
 }
