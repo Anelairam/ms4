@@ -19,7 +19,7 @@
             <div class="col">
                 <h2>Starters</h2>
                 {% for menu in menus %}
-                    {% if menu.menu_category == 0 %}
+                    {% if menu.item_category == 0 %}
                         <div class="row">
                             <div class="col">
                                 <h2 class="title"> {{ menu.title}} </h2>
@@ -37,7 +37,7 @@
             <div class="col">
                 <h2>Mains</h2>
                 {% for menu in menus %}
-                    {% if menu.menu_category == 1 %}
+                    {% if menu.item_category == 1 %}
                         <div class="row">
                             <div class="col">
                                 <h2 class="title"> {{ menu.title}} </h2>
@@ -55,7 +55,7 @@
             <div class="col">
                 <h2>Desserts</h2>
                 {% for menu in menus %}
-                    {% if menu.menu_category == 2 %}
+                    {% if menu.item_category == 2 %}
                         <div class="row">
                             <div class="col">
                                 <h2 class="title"> {{ menu.title}} </h2>

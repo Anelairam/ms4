@@ -13,7 +13,7 @@ class menu_item(models.Model):
     # employee_id = models.ForeignKey(User)
     created_on = models.DateField(auto_now_add=True)
     menu_category = models.IntegerField(choices=MENU_TYPE, default=0)
-    item_category = models.IntegerField(choices=ITEM_TYPE, default=0)
+    item_category = models.IntegerField(choices=ITEM_TYPE)
 
     def __str__(self):
         return self.title
