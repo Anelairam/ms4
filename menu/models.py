@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 MENU_TYPE = {(0, "Lunch"), (1, "Dinner")}
-ITEM_TYPE = {(0, "Starter"), (0, "Main Course"), (0, "Dessert")}
+ITEM_TYPE = {(0, "Starter"), (1, "Main Course"), (2, "Dessert")}
 
 
 class menu_item(models.Model):

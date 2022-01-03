@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,12 @@
 /* Header area */
 body {
     background-color: lightskyblue;
+}
+
+#logo {
+    font-family: 'Oooh Baby', cursive;
+    color: white;
+    text-decoration: none;
 }
 
 .container-fluid {
@@ -134,4 +142,11 @@ footer {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/* Styles for menu page */
+/* Styles for main container */
+.menu_container {
+    text-align: center;
+    background-color: rgba(265, 265, 265, 0.6);
 }
