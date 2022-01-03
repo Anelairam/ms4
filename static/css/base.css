@@ -12,6 +12,10 @@ body {
     background-color: lightskyblue;
 }
 
+header {
+    margin-bottom: 35px;
+}
+
 #logo {
     font-family: 'Oooh Baby', cursive;
     color: white;
@@ -26,6 +30,9 @@ body {
     background-color: #323232;
     color: white;
     text-align: center;
+    padding-top: 10px;
+    height: 75px;
+    line-height: 50px;
 }
 
 .nav_bar ul li{

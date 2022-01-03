@@ -22,12 +22,14 @@
                 <div class="col nav_bar">
                     <!-- Beginning of navigation bar -->
                     <ul>
-                        <li>
-                            <a href="{% url 'booknow' %}">Book Now</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'booking' %}">My Bookings</a>
-                        </li>
+                        {% if request.user.is_authenticated %}
+                            <li>
+                                <a href="{% url 'booknow' %}">Book Now</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'booking' %}">My Bookings</a>
+                            </li>
+                        {% endif %}
                         <li>
                             <a href="{% url 'menu' %}">Menu</a>                            
                         </li>
