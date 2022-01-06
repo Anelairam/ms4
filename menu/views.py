@@ -5,8 +5,12 @@ from . models import menu_item
 
 
 def menu(request):
-    menus = menu_item.objects.all()
+    starter = menu_item.objects.filter(item_category=0)
+    mains = menu_item.objects.filter(item_category=1)
+    deserts = menu_item.objects.filter(item_category=2)
     context = {
-        'menus': menus
+        'starters': starter,
+        'mains': mains,
+        'deserts': deserts,
     }
     return render(request, 'menu/menu.html', context)

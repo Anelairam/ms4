@@ -17,56 +17,50 @@
         <div class="row">
             <div class="col">
                 <h2>Starters</h2>
-                {% for menu in menus %}
-                    {% if menu.item_category == 0 %}
-                        <div class="row">
-                            <div class="col">
-                                <h3 class="title"> {{ menu.title}} </h3>
-                                <div class="dish_info">
-                                    <p> {{ menu.components }}</p>
-                                    <p>{{ menu.price}} €</p>
-                                </div>
+                {% for starter in starters %}
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="title"> {{ starter.title}} </h3>
+                            <div class="dish_info">
+                                <p> {{ starter.components }}</p>
+                                <p>{{ starter.price}} €</p>
                             </div>
                         </div>
-                    {% endif %}
+                    </div>
                 {% endfor %}
             </div>
-        </div>
+        </div>       
         <div class="row">
             <div class="col">
-                <h2>Mains</h2>
-                {% for menu in menus %}
-                    {% if menu.item_category == 1 %}
-                        <div class="row">
-                            <div class="col">
-                                <h3 class="title"> {{ menu.title}} </h3>
-                                <div class="dish_info">
-                                    <p> {{ menu.components }}</p>
-                                    <p>{{ menu.price}} €</p>
-                                </div>
+                <h2>Main Course</h2>
+                {% for main in mains %}
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="title"> {{ main.title}} </h3>
+                            <div class="dish_info">
+                                <p> {{ main.components }}</p>
+                                <p>{{ main.price}} €</p>
                             </div>
                         </div>
-                    {% endif %}
+                    </div>
                 {% endfor %}
             </div>
-        </div>
+        </div>    
         <div class="row">
             <div class="col">
-                <h2>Desserts</h2>
-                {% for menu in menus %}
-                    {% if menu.item_category == 2 %}
-                        <div class="row">
-                            <div class="col">
-                                <h3 class="title"> {{ menu.title}} </h3>
-                                <div class="dish_info">
-                                    <p> {{ menu.components }}</p>
-                                    <p>{{ menu.price}} €</p>
-                                </div>
+                <h2>Deserts</h2>
+                {% for desert in deserts %}
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="title"> {{ desert.title}} </h3>
+                            <div class="dish_info">
+                                <p> {{ desert.components }}</p>
+                                <p>{{ desert.price}} €</p>
                             </div>
                         </div>
-                    {% endif %}
+                    </div>
                 {% endfor %}
-            </div>
+            </div>            
         </div>
     </div>
 {% endblock %}

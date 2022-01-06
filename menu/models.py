@@ -12,7 +12,7 @@ class menu_item(models.Model):
     price = models.DecimalField(max_digits=4, decimal_places=2)
     # employee_id = models.ForeignKey(User)
     created_on = models.DateField(auto_now_add=True)
-    menu_category = models.IntegerField(choices=MENU_TYPE, default=0)
+    menu_category = models.IntegerField(choices=MENU_TYPE)
     item_category = models.IntegerField(choices=ITEM_TYPE)
 
     def __str__(self):
