@@ -7,6 +7,11 @@ from .forms import BookForm
 
 
 def booknow(request):
+    if request.method == "post":
+        form = BookForm(request.POST)
+        if form.is_valid():
+            print('VALID')
+
     form = BookForm()
 
     return render(request, 'booknow/booknow.html', {'form': form})
