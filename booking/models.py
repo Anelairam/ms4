@@ -20,7 +20,7 @@ class Book(models.Model):
     # updated_on = models.DateTimeField(auto_now=True)#
     table_num = models.IntegerField(choices=TABLES)
     guests_num = models.IntegerField(choices=GUESTS)
-    status = models.IntegerField(choices=STATUS, default=0)
+    status = models.IntegerField(choices=STATUS)
 
     class Meta:
         ordering = ["-created_on"]
