@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from .models import Book, TestForms
-import datetime
 
 
 # Create your views here.
