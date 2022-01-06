@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 
+/* Resets all the default browser styles */
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +21,10 @@ header {
     font-family: 'Oooh Baby', cursive;
     color: white;
     text-decoration: none;
+}
+
+.base {
+    background-image: url("https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641504065/greenwich/main_qnignh.jpg");
 }
 
 .container-fluid {
@@ -63,6 +68,7 @@ footer {
     color: white;
     height: 50px;
 }
+/* end of styles for base.html */
 
 /* Styles for booking.html */
 .title {
@@ -81,6 +87,7 @@ footer {
 .info_display {
     display: flex;
 }
+/* end of styles for booking.html */
 
 /* Styles for index */
 .index_wrapper {
@@ -150,10 +157,33 @@ footer {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+/* end of styles for index.html */
+
 
 /* Styles for menu page */
 /* Styles for main container */
 .menu_container {
     text-align: center;
     background-color: rgba(265, 265, 265, 0.6);
+}
+
+.dish_type_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+}
+
+.dish_type_title h2{
+    padding-top: 3px;
+}
+
+
+.left {
+    transform: scaleX(-1);
+    margin-right: 5px;
+}
+
+.right {
+    margin-left: 5px;
 }

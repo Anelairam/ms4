@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
+<!-- The page renders data from the DB, sorted based on the dish category from the menu_item model -->
+
 {% block content %}
+<!-- Page summary -->
     <div class="container menu_container">
         <div class="row page_description">
             <div class="col">
@@ -14,13 +17,19 @@
                 </p>
             </div>
         </div>
+        <!-- Rendered DB content based on the starter category -->
         <div class="row">
             <div class="col">
-                <h2>Starters</h2>
+                <div class="dish_type_title">
+                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="left">
+                    <h2>Starters</h2>
+                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="right">
+                </div>
+                <hr>
                 {% for starter in starters %}
                     <div class="row">
                         <div class="col">
-                            <h3 class="title"> {{ starter.title}} </h3>
+                            <h3 class="dish_title"> {{ starter.title}} </h3>
                             <div class="dish_info">
                                 <p> {{ starter.components }}</p>
                                 <p>{{ starter.price}} €</p>
@@ -29,14 +38,19 @@
                     </div>
                 {% endfor %}
             </div>
-        </div>       
+        </div>
+        <!-- Rendered DB content based on the main course category -->
         <div class="row">
             <div class="col">
-                <h2>Main Course</h2>
+                <div class="dish_type_title">
+                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="left">
+                    <h2>Main Course</h2>
+                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="right">
+                </div>                
                 {% for main in mains %}
                     <div class="row">
                         <div class="col">
-                            <h3 class="title"> {{ main.title}} </h3>
+                            <h3 class="dish_title"> {{ main.title}} </h3>
                             <div class="dish_info">
                                 <p> {{ main.components }}</p>
                                 <p>{{ main.price}} €</p>
@@ -45,14 +59,19 @@
                     </div>
                 {% endfor %}
             </div>
-        </div>    
+        </div>
+        <!-- Rendered DB content based on the desert category -->
         <div class="row">
             <div class="col">
-                <h2>Deserts</h2>
+                <div class="dish_type_title">
+                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="left">
+                    <h2>Deserts</h2>
+                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="right">
+                </div>
                 {% for desert in deserts %}
                     <div class="row">
                         <div class="col">
-                            <h3 class="title"> {{ desert.title}} </h3>
+                            <h3 class="dish_title"> {{ desert.title}} </h3>
                             <div class="dish_info">
                                 <p> {{ desert.components }}</p>
                                 <p>{{ desert.price}} €</p>
