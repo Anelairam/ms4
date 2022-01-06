@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'menu',
     'info',
     'booknow',
+
+    'crispy_forms',
 ]
 
 SITE_ID = 1

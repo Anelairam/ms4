@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Hello I am booking</h2>
     <div class="container">
         <div class="row description">
           <h1>I am the profile page change me folder</h1>
-          <p>In this page (you=name) as authenticated user can see and interact with your bookings</p>
+          <p>In this page {{ user.username}} as authenticated user can see and interact with your bookings</p>
         </div>
           {% for booking in bookings%}
             <div class="row">
@@ -33,22 +32,4 @@
             </div>
           {% endfor %}
       </div>
-
-      <form method="POST" action="{% url 'booking' %}">
-        {% csrf_token %}
-        <div>
-          <label for="title">Add title: </label>
-          <input type="text" id="title_id" name="title">
-        </div>
-        <div>
-          <label for="date">Date:</label>
-          <input type="date" name="date" id="date_item" onclick="todayDate()" value="{{TestForms.date|date:'Y-m-d'}}">
-        </div>
-        <div>
-          <label for="time">Time:</label>
-          <input type="time" name="time" id="time_item" max='23:00' min='11:00' value="{{TestForms.time|time:'h i A'}}">
-          <p>Bookings take place from 11AM to 11PM</p>
-        </div>
-        <button type="submit"> Add tittle</button>
-      </form>
 {% endblock %}

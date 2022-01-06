@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 STATUS = ((0, "Draft"), (1, "Booked"))
 TABLES = ((1, "1"), (2, "2"), (3, "3"), (4, "4"), (5, "5"), (6, "6"), (7, "7"), (8, "8"), (9, "9"))
 GUESTS = ((1, "One"), (2, "Two"), (3, "Three"), (4, "Four"), )
-TYPE = ((0, ""), (1, "Lunch"), (2, "Dinner"),)
+TYPE = ((1, "Lunch"), (2, "Dinner"),)
 
 class Book(models.Model):
     # title = models.CharField(max_length=200, unique=True)
@@ -27,9 +27,3 @@ class Book(models.Model):
 
     # def __str__(self):
     #     return self.title
-
-
-class TestForms(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    date = models.DateField(null=True)
-    time = models.TimeField(null=True)

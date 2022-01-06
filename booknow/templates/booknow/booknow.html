@@ -5,9 +5,10 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form method= "POST" action="{% url 'booking' %}">
+                <form method= "POST">
                     {% csrf_token %}
                     {{ form }}
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
