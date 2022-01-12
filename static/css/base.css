@@ -145,6 +145,10 @@ footer {
     text-decoration: underline;
 }
 
+body{
+    background-color: lightblue;
+}
+
 .title:hover {
     cursor: pointer;
     color: white;
