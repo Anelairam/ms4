@@ -14,3 +14,7 @@ def menu(request):
         'deserts': deserts,
     }
     return render(request, 'menu/menu.html', context)
+
+
+def add_edit(request):
+    return render(request, 'menu/add_edit.html')
