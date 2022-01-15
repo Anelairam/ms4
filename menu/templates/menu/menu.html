@@ -16,6 +16,9 @@
                     Nullam bibendum non mi ac ultricies. Donec vestibulum iaculis est sed tempus.
                 </p>
             </div>
+            {% if  user.username == "admin" %}}
+                <a href="{% url 'add_edit' %}">Add item</a>
+            {% endif %}
         </div>
         <!-- Rendered DB content based on the starter category -->
         <div class="row">

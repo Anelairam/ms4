@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from . models import menu_item
+from .models import menu_item
+from .form import addItemForm
 
 # Create your views here.
 
@@ -17,4 +18,11 @@ def menu(request):
 
 
 def add_edit(request):
-    return render(request, 'menu/add_edit.html')
+    if request.method == "POST":
+        form = addItemForm(request.POST)
+        if form.is_valid():
+            form.save()
+            
+    form = addItemForm()
+
+    return render(request, 'menu/add_edit.html', {'form': form})

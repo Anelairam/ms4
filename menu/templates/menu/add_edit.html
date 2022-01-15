@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 <!-- The page renders data from the DB, sorted based on the dish category from the menu_item model -->
+{% load crispy_forms_tags %}
 
 {% block content %}
 <!-- Page summary -->
@@ -8,6 +9,11 @@
         <div class="row">
             <div class="col">
                 <h1>Here is the add + edit page</h1>
+                <form method= "POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>

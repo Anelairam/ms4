@@ -24,4 +24,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('menu/', include('menu.urls')),
     path('info/', include('info.urls')),
+    path('add_edit/', include('menu.urls')),
 ]
