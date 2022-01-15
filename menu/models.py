@@ -7,6 +7,7 @@ ITEM_TYPE = {(0, "Starter"), (1, "Main Course"), (2, "Dessert")}
 
 
 class menu_item(models.Model):
+    id = 
     title = models.CharField(max_length=200, unique=True)
     components = models.CharField(max_length=5000)
     price = models.DecimalField(max_digits=4, decimal_places=2)

@@ -22,7 +22,7 @@ def add_edit(request):
         form = addItemForm(request.POST)
         if form.is_valid():
             form.save()
-            
+   
     form = addItemForm()
 
     return render(request, 'menu/add_edit.html', {'form': form})
