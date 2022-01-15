@@ -5,16 +5,27 @@
 
 {% block content %}
 <!-- Page summary -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Hello add new menu item here</h1>
-                <form method= "POST">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <button type="submit">Add Item</button>
-                </form>
+    {% if request.user.is_authenticated %}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Hello add new menu item here</h1>
+                    <form method= "POST">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button type="submit">Add Item</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    {% else %}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>You need to be logged in to see the content of this page.</h1>
+                    <p>Login or sign up <a href="{% url 'index' %}">here!</a></p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 {% endblock %}

@@ -16,7 +16,7 @@
                     Nullam bibendum non mi ac ultricies. Donec vestibulum iaculis est sed tempus.
                 </p>
             </div>
-            {% if  user.username == "admin" %}}
+            {% if  user.username == "admin" %}
                 <a href="{% url 'add' %}">Add item</a>
             {% endif %}
         </div>
@@ -32,7 +32,11 @@
                 {% for starter in starters %}
                     <div class="row">
                         <div class="col">
-                            <h3 class="dish_title"> {{ starter.title}} <a href="{% url 'edit' starter.id %}"><button>Edit</button></a><a href="{% url 'delete' starter.id %}"><button>Delete</button></a></h3>
+                            {% if  user.username == "admin" %}
+                                <h3 class="dish_title"> {{ starter.title}} <a href="{% url 'edit' starter.id %}"><button>Edit</button></a><a href="{% url 'delete' starter.id %}"><button>Delete</button></a></h3>
+                            {% else %}
+                                <h3 class="dish_title"> {{ starter.title}} </h3>
+                            {% endif %}
                             <div class="dish_info">
                                 <p> {{ starter.components }}</p>
                                 <p>{{ starter.price}} €</p>
@@ -54,7 +58,11 @@
                 {% for main in mains %}
                     <div class="row">
                         <div class="col">
-                            <h3 class="dish_title"> {{ main.title}} <a href="{% url 'edit' main.id %}"><button>Edit</button></a><a href="{% url 'delete' main.id %}"><button>Delete</button></a></h3>
+                            {% if  user.username == "admin" %}
+                                <h3 class="dish_title"> {{ main.title}} <a href="{% url 'edit' main.id %}"><button>Edit</button></a><a href="{% url 'delete' main.id %}"><button>Delete</button></a></h3>
+                            {% else %}
+                                <h3 class="dish_title"> {{ main.title}} </h3>
+                            {% endif %}
                             <div class="dish_info">
                                 <p> {{ main.components }}</p>
                                 <p>{{ main.price}} €</p>
@@ -76,7 +84,11 @@
                 {% for desert in deserts %}
                     <div class="row">
                         <div class="col">
-                            <h3 class="dish_title"> {{ desert.title}} <a href="{% url 'edit' desert.id %}"><button>Edit</button></a><a href="{% url 'delete' desert.id %}"><button>Delete</button></a></h3>
+                            {% if  user.username == "admin" %}
+                                <h3 class="dish_title"> {{ desert.title}} <a href="{% url 'edit' desert.id %}"><button>Edit</button></a><a href="{% url 'delete' desert.id %}"><button>Delete</button></a></h3>
+                            {% else %}
+                                <h3 class="dish_title"> {{ desert.title}} </h3>
+                            {% endif %}
                             <div class="dish_info">
                                 <p> {{ desert.components }}</p>
                                 <p>{{ desert.price}} €</p>
