@@ -23,6 +23,8 @@ urlpatterns = [
     path('booking/', include('booking.urls')),
     path('accounts/', include('allauth.urls')),
     path('menu/', include('menu.urls')),
+    path('add/', include('menu.urls')),
+    path('edit/', include('menu.urls')),
+    path('delete/', include('menu.urls')),
     path('info/', include('info.urls')),
-    path('add_edit/', include('menu.urls')),
 ]
