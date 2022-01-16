@@ -17,7 +17,7 @@
                 </p>
             </div>
             {% if  user.username == "admin" %}
-                <a href="{% url 'add' %}">Add item</a>
+                <a href="{% url 'add' %}">Add item <i class="fas fa-plus"></i></a>
             {% endif %}
         </div>
         <!-- Rendered DB content based on the starter category -->
@@ -33,7 +33,15 @@
                     <div class="row">
                         <div class="col">
                             {% if  user.username == "admin" %}
-                                <h3 class="dish_title"> {{ starter.title}} <a href="{% url 'edit' starter.id %}"><button>Edit</button></a><a href="{% url 'delete' starter.id %}"><button>Delete</button></a></h3>
+                                <h3 class="dish_title"> 
+                                    {{ starter.title}}
+                                    <a href="{% url 'edit' starter.id %}">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="{% url 'delete' starter.id %}">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </h3>
                             {% else %}
                                 <h3 class="dish_title"> {{ starter.title}} </h3>
                             {% endif %}
@@ -59,7 +67,15 @@
                     <div class="row">
                         <div class="col">
                             {% if  user.username == "admin" %}
-                                <h3 class="dish_title"> {{ main.title}} <a href="{% url 'edit' main.id %}"><button>Edit</button></a><a href="{% url 'delete' main.id %}"><button>Delete</button></a></h3>
+                                <h3 class="dish_title"> 
+                                    {{ main.title}} 
+                                    <a href="{% url 'edit' main.id %}">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="{% url 'delete' main.id %}">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </h3>
                             {% else %}
                                 <h3 class="dish_title"> {{ main.title}} </h3>
                             {% endif %}
@@ -85,7 +101,15 @@
                     <div class="row">
                         <div class="col">
                             {% if  user.username == "admin" %}
-                                <h3 class="dish_title"> {{ desert.title}} <a href="{% url 'edit' desert.id %}"><button>Edit</button></a><a href="{% url 'delete' desert.id %}"><button>Delete</button></a></h3>
+                                <h3 class="dish_title"> 
+                                    {{ desert.title}} 
+                                    <a href="{% url 'edit' desert.id %}">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="{% url 'delete' desert.id %}">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </h3>
                             {% else %}
                                 <h3 class="dish_title"> {{ desert.title}} </h3>
                             {% endif %}

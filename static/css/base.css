@@ -190,3 +190,9 @@ body{
 .right {
     margin-left: 5px;
 }
+
+/* Styles for add and edit page */
+/* Styles for main container */
+#edit_item_container {
+    margin-top: 5%;
+}
