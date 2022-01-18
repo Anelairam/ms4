@@ -5,6 +5,8 @@ var tablinks = document.getElementsByClassName("tablinks");
 var tabcontent = document.getElementsByClassName("tabcontent");
 var login = document.getElementById("login_container");
 var signup = document.getElementById("singup_container");
+var delete_btn = document.getElementsByClassName("delete_btn");
+var delete_message = document.getElementsByClassName("message");
 
 // Toggles the booking info from title to full text
 for (var i=0; i<= book_title.length; i++){

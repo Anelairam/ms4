@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
 from .models import menu_item
 from .form import addItemForm
 
@@ -45,4 +45,9 @@ def edit_item(request, item_id):
 def delete_item(request, item_id):
     item = get_object_or_404(menu_item, id=item_id)
     item.delete()
-    return redirect('menu')
+    context = {
+        'message': "Hello, you have successfully deleted an item from the menu",
+    }
+    return render(request, 'menu', context)
+
+

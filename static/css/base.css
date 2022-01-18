@@ -168,6 +168,7 @@ body{
 .menu_container {
     text-align: center;
     background-color: rgba(265, 265, 265, 0.9);
+    margin-top: 5%;
 }
 
 .dish_type_title {
@@ -190,6 +191,19 @@ body{
 .right {
     margin-left: 5px;
 }
+
+.message {
+    background-color: rgb(42, 209, 42);
+    margin-bottom: 25px;
+    animation: messageFadeEffect 5s;
+}
+  
+/* Go from zero to full opacity */
+@keyframes messageFadeEffect {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
 
 /* Styles for add and edit page */
 /* Styles for main container */
