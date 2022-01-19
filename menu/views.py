@@ -45,9 +45,9 @@ def edit_item(request, item_id):
 def delete_item(request, item_id):
     item = get_object_or_404(menu_item, id=item_id)
     item.delete()
-    context = {
-        'message': "Hello, you have successfully deleted an item from the menu",
-    }
+    context = {}
+    context['message'] = "Hello, you have successfully deleted an item from the menu"
+    
     return render(request, 'menu', context)
 
 

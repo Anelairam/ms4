@@ -51,7 +51,6 @@ li a {
 
 #base_container{
     width: 100%;
-    height: 100%;
 }
 
 /* Footer area */
@@ -60,21 +59,24 @@ footer {
     color: white;
     height: 50px;
     text-align: center;
+    margin-bottom: 0;
 }
 /* end of styles for base.html */
 
 /* Styles for index.html */
 #index_wrapper {
     width: 100%;
-    height: 100%;
-    background: url("https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641584745/greenwich/main2_iioljt.jpg") no-repeat center center;
-    margin: 0;
+}
+
+#index_wrapper img {
+    height: 90vh;
 }
 
 #tab_content{
     /* min-height: 100vh; */
     background-color: #323232;
     align-items: center;
+    margin: 15px auto;
 }
 
 /* login styles */
