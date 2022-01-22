@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container">
+    <div class="container" id="bookings_container">
       {% if request.user.is_authenticated %}
         <div class="row description">
           <div class="col">
-            <h1>I am the profile page change me folder</h1>
-            <p>In this page {{ user.username}} as authenticated user can see and interact with your bookings</p>
+            <h1>Hello {{ user.username}} here are all the bookings </h1>
           </div>
         </div>
           {% for booking in bookings%}
@@ -21,14 +20,6 @@
                   <p>In case of food allergies or any other information that you would like to be aware please 
                       do not hesitate to contact us</p>
                 </div>
-              </div>
-              <hr>
-            </div>
-          {% endfor %}
-          {% for test in tests %}
-            <div class="row">
-              <div class="col">
-                <h2 class="title">{{ test.title }}, {{ test.date }}, {{ test.time }},  </h2>
               </div>
               <hr>
             </div>
