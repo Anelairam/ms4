@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<!-- Container of booking details -->
   <div class="container" id="bookings_container">
     {% if request.user.is_authenticated %}
       {% if messages %}
@@ -12,6 +13,7 @@
           </div>
         {% endfor %}
       {% endif %}
+      <!-- Booking information -->
       <div class="row description">
         <div class="col">
           <h1>Hello {{ user.username}} here are all the bookings </h1>
