@@ -87,13 +87,13 @@ footer {
 
 /* login styles */
 #login_container {
-    background-color: lightblue;
+    background-color: white;
     width: 80%;
 }
 
 /* signup styles */
 #singup_container {
-    background-color: lightpink;
+    background-color: white;
     width: 80%;
     display: none;
 }
@@ -101,7 +101,7 @@ footer {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #bf80ff;
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -109,15 +109,15 @@ footer {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: royalblue;
+    background-color: #b4ebc2;
 }
 
 .tab button.active:hover {
-    background-color: royalblue;
+    background-color: #65cf7f;
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #a94dff;
 }
 
 /* Style the buttons that are used to open the tab content */
