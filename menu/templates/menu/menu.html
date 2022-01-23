@@ -5,6 +5,15 @@
 {% block content %}
 <!-- Page summary -->
     <div class="container" id="menu_container">
+        {% if messages %}
+            {% for message in messages %}
+            <div class="row alert alert-success" role="alert">
+                <div class="col">
+                {{ message }}
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
         <div class="row page_description">
             <div class="col">
                 <h2>The greenwich menu</h2>

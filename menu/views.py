@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, HttpResponse
+from django.contrib import messages
 from .models import menu_item
 from .form import addItemForm
 
@@ -22,6 +23,8 @@ def add_item(request):
         form = addItemForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'You have successfully added a new dish in the menu')
+            return redirect('menu')
     form = addItemForm()
     context = {
         'form': form
@@ -35,6 +38,8 @@ def edit_item(request, item_id):
         form = addItemForm(request.POST, instance=item)
         if form.is_valid():
             form.save()
+            messages.success(request, 'You have successfully edited a dish from the menu')
+            return redirect('menu')
     form = addItemForm(instance=item)
     context = {
         'form': form
@@ -45,9 +50,7 @@ def edit_item(request, item_id):
 def delete_item(request, item_id):
     item = get_object_or_404(menu_item, id=item_id)
     item.delete()
-    context = {}
-    context['message'] = "Hello, you have successfully deleted an item from the menu"
-    
-    return render(request, 'menu', context)
+    messages.success(request, 'You have successfully deleted a dish from the menu')
+    return redirect('menu/menu.html')
 
 
