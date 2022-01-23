@@ -6,8 +6,11 @@ from .models import Book
 
 # Renders the booking data into the booking template
 def booking(request):
-    bookings = Book.objects.all()
+    booked = Book.objects.filter(status=1)
+    pending = Book.objects.filter(status=0)
     context = {
-        'bookings': bookings,
+        'booked': booked,
+        'pending': pending
+
     }
     return render(request, 'booking/booking.html', context)

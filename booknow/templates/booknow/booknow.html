@@ -7,12 +7,12 @@
     <div class="container" id="book_now_container">
         {% if request.user.is_authenticated %}
             <div class="row">
-                <div class="col">
+                <div class="col form-heading">
                     <h2>Hello {{ user.username}} here you can reserver you table.</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col" id="form_content">
                     <form method= "POST">
                         {% csrf_token %}
                             {% if user.username == "admin" %}
@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                             {% endif %}
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn-success" id="book_btn">Book</button>
                     </form>
                 </div>
             </div>
