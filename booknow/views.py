@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .forms import BookForm
 
 # Create your views here.
@@ -9,6 +10,8 @@ def booknow(request):
         form = BookForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'You have requested a booking we will it as soon as possible')
+            return redirect('../booking')
             
     form = BookForm()
 

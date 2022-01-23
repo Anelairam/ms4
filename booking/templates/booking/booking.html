@@ -1,36 +1,45 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container" id="bookings_container">
-      {% if request.user.is_authenticated %}
-        <div class="row description">
-          <div class="col">
-            <h1>Hello {{ user.username}} here are all the bookings </h1>
+  <div class="container" id="bookings_container">
+    {% if request.user.is_authenticated %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="row alert alert-success" role="alert">
+            <div class="col">
+              {{ message }}
+            </div>
           </div>
-        </div>
-          {% for booking in bookings%}
-            <div class="row">
-              <div class="col">
-                <h2 class="title">{{ booking.booked_date|date:'l dS M Y' }} at {{ booking.booked_time|date:'H:i' }}</h2>
-                <div class="row book_information">
-                  <p>Booked for: {{ booking.booked_time}}</p>
-                  <p>Booked at: {{ booking.booked_date}}</p>
-                  <p>Booked on: {{ booking.created_on}}</p>
-                  <p>Guests: {{ booking.guests_num}}</p>
-                  <p>In case of food allergies or any other information that you would like to be aware please 
-                      do not hesitate to contact us</p>
-                </div>
-              </div>
-              <hr>
-            </div>
-          {% endfor %}
-      {% else %}
-            <div class="row">
-              <div class="col">
-                <h1>You need to be logged in to see the content of this page.</h1>
-                <p>Login or sign up <a href="{% url 'index' %}">here!</a></p>
-              </div>
-            </div>
+        {% endfor %}
       {% endif %}
+      <div class="row description">
+        <div class="col">
+          <h1>Hello {{ user.username}} here are all the bookings </h1>
+        </div>
       </div>
+        {% for booking in bookings%}
+          <div class="row">
+            <div class="col">
+              <h2 class="title">{{ booking.booked_date|date:'l dS M Y' }} at {{ booking.booked_time|date:'H:i' }}</h2>
+              <div class="row book_information">
+                <p>Booked for: {{ booking.booked_time}}</p>
+                <p>Booked at: {{ booking.booked_date}}</p>
+                <p>Booked on: {{ booking.created_on}}</p>
+                <p>Guests: {{ booking.guests_num}}</p>
+                <p>In case of food allergies or any other information that you would like to be aware please 
+                    do not hesitate to contact us</p>
+              </div>
+            </div>
+            <hr>
+          </div>
+        {% endfor %}
+    {% else %}
+          <div class="row">
+            <div class="col">
+              <h1>You need to be logged in to see the content of this page.</h1>
+              <p>Login or sign up <a href="{% url 'index' %}">here!</a></p>
+            </div>
+          </div>
+    {% endif %}
+    </div>
 {% endblock %}

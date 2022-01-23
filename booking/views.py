@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import Book
 
 
@@ -11,4 +11,3 @@ def booking(request):
         'bookings': bookings,
     }
     return render(request, 'booking/booking.html', context)
-    # return render(request, 'booking/booking.html') it works
