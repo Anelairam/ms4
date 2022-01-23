@@ -264,7 +264,34 @@ footer {
 /* Styles for main container */
 .add_edit_container {
     background-color: white;
+    width: 30%;
+    min-height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.form-heading {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.item_form_content{
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.col form {
+    width: 60%;
+}
+
+.form-row{
+    margin-top: 10px;
+}
+
+#update_btn, #add_btn{
+    margin: 25px 0;
+    width: 25%;
 }

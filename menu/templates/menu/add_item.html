@@ -7,12 +7,31 @@
     {% if request.user.is_authenticated %}
         <div class="container add_edit_container" >
             <div class="row">
-                <div class="col">
-                    <h1>Hello add new menu item here</h1>
+                <div class="col item_form_content">
+                    <h1 class="form-heading">Hello add new menu item here</h1>
                     <form method= "POST">
                         {% csrf_token %}
-                        {{ form|crispy }}
-                        <button class="btn btn-primary" type="submit">Add Item</button>
+                        <div class="form-row">
+                            <div class="form-group">
+                                {{form.title|as_crispy_field}}
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                {{form.components|as_crispy_field}}
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                {{form.price|as_crispy_field}}
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                {{form.item_category|as_crispy_field}}
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit" id="add_btn">Add Item</button>
                     </form>
                 </div>
             </div>
