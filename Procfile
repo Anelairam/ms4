@@ -1,1 +1,1 @@
-web: gunicorn the_greenwich.wsg
+web: gunicorn the_greenwich.wsgi:application

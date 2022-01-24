@@ -116,9 +116,14 @@ WSGI_APPLICATION = 'the_greenwich.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+# }
+
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+   'default': dj_database_url.parse('postgres://aypofggqyxrpmf:4ee66f0fc79a90075e6371fad3581d1a23139afb7f6b926560020300646e6c3c@ec2-63-34-223-144.eu-west-1.compute.amazonaws.com:5432/d9t9anji3u8nv5')
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
