@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME", "localhost")]
+ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), "localhost",]
 
 
 # Application definition
@@ -69,9 +69,13 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/booking'
 LOGOUT_REDIRECT_URL = '/'
 
-ACCOUNT_FORMS = {
-    'signup': 'the_greenwich.forms.CustomSignupForm',
-}
+# ACCOUNT_FORMS = {
+#     'signup': 'the_greenwich.forms.CustomSignupForm',
+# }
+
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+
+EMAIL_FILE_PATH = 'the_greenwich/email_messages'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
