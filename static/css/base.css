@@ -468,7 +468,7 @@ footer {
 
 @media screen and (min-width: 1366px) {
     #base_container {
-        min-height: 92vh;
+        min-height: 90vh;
     }
 
     #index_wrapper {
