@@ -299,5 +299,7 @@ footer {
 /* Signup page styles */
 #signup_container{
     background-color: white;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
