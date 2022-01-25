@@ -51,6 +51,7 @@ def delete_item(request, item_id):
     item = get_object_or_404(menu_item, id=item_id)
     item.delete()
     messages.success(request, 'You have successfully deleted a dish from the menu')
-    return redirect('menu')
+    # return redirect('menu')
+    return render(request, 'menu/menu.html')
 
 
