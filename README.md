@@ -1,3 +1,76 @@
+![bannerimage](upload image)
+
+---
+## Project: Food Court (Milestone project 4)
+
+## Table of Contents
+
+<details>
+<summary>
+  Expand
+</summary>
+  
+  * [Introduction](#introduction)
+  * [User Experience (UX)](#user-experience-(ux))
+    * [User Stories](#user-stories)
+      * [Site Owner Goals](#site-owner-goals)
+      * [All Visitor Goals](#all-visitor-goals)
+      * [First Time Visitor Goals](#first-time-visitor-goals)
+      * [Returning Visitor Goals](#returning-visitor-goals)
+  * [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+  * [Technologies](#technologies)
+  * [Testing](#testing)
+    * [Testing Site Owner Goals](#testing-site-owner-goals)
+    * [Testing All Visitor Goals](#testing-all-visitor-goals)
+    * [Testing First Time Visitor Goals](#testing-all-visitor-goals)
+    * [Testing Returning Visitor Goals](#testing-returning-visitor-goals)
+    * [Manual Testing](#manual-testing)
+    * [Cross Browser Testing](#cross-browser-testing)
+    * [Browser Testing](#browser-testing)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    * [Inspiration](#inspiration)
+    * [Resources](#resources)
+    * [Media](#media)
+    
+</details>
+ 
+### Introduction
+
+The website is named Food Court, and it is booking management system for a restaurant. It's an everyday tool for the employees, employer and customers to help them with the management, control and creation of bookings. 
+The bookings of the users are held in a linked database. When a user creates an account he/she is ready to make their first booking and navigate freely through the website.
+There are two roles currently available in the website the role of an admin user and the role of a normal user both the will be described further below.
+
+---
+## User Experience
+
+### Ideal User
+
+### Users visiting the website would be:
+
+* Anyone who has access to the internet
+* Want to make a booking
+* want to see the restaurant's menu
+* Want to manipulate the data of the menu dishes and bookings
+
+### Admin users on the website will be able to:
+
+* Keep up to date the menu dishes
+* Request or make a booking
+* Confirm reservations from the back end 
+
+### Simple users on the website will be able to:
+
+* Request/make a booking
+* Navigate freely through the website's information
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Marialena Livathinopoulou,
