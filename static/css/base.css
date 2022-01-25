@@ -87,7 +87,7 @@ footer {
 
 /* login styles */
 #login_container {
-    background-color: white;
+    background-color: blue;
     width: 80%;
 }
 
@@ -294,4 +294,10 @@ footer {
 #update_btn, #add_btn{
     margin: 25px 0;
     width: 25%;
+}
+
+/* Signup page styles */
+#singup_container {
+    background-color: white;
+
 }
