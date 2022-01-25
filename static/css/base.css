@@ -284,6 +284,24 @@ footer {
 
 
 /* Responcive css styles */
+@media (max-width: 375px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: 0; }
+    
+    #base_container {
+        min-height: 81vh;
+    }
+
+    #index_wrapper {
+        width: 75%;
+    }
+
+    #bookings_container {
+        width: 70%;
+    }
+
+  }
+
 @media (max-width: 480px) {
     #base_container {
         min-height: 81vh;
