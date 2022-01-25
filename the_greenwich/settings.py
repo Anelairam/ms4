@@ -19,7 +19,7 @@ import mimetypes
 if os.path.isfile("env.py"):
     import env
 
-development = os.environ.get("DEVELOPMENT", True)
+# development = os.environ.get("DEVELOPMENT", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,7 +34,7 @@ CSRF_TRUSTED_ORIGINS = ["https://8000-pink-pheasant-41g8cg7b.ws-eu28.gitpod.io",
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = "DEVELOPMENT" in os.environ
 
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), "localhost", "ci-ms4-app.herokuapp.com"]
 
@@ -173,7 +173,7 @@ USE_TZ = True
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
  
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
