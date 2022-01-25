@@ -269,6 +269,28 @@ footer {
     margin: 25px auto;
 }
 
+/* Logout page styles */
+#logout_container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    min-height: 15vh;
+    text-align: center;
+    padding: 30px;
+}
+
+#logout_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#logout_btn{
+    margin: 25px auto;
+}
 
 /* Responcive css styles */
 @media (max-width: 376px) {
