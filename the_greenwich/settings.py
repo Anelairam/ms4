@@ -117,7 +117,7 @@ WSGI_APPLICATION = 'the_greenwich.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-if development:
+if "DEVELOPMENT" in os.environ:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
