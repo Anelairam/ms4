@@ -317,3 +317,25 @@ footer {
 #singup_btn{
     margin: 25px auto;
 }
+
+
+/* Responcive css styles */
+@media (max-width: 480px) {
+    #base_container {
+        min-height: 81vh;
+    }
+
+    #index_wrapper {
+        width: 109%;
+    }
+
+  }
+/* @media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1366px) {
+
+} */

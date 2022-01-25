@@ -9,7 +9,7 @@ TYPE = ((0, "Not assigned"), (1, "Lunch"), (2, "Dinner"),)
 
 class Book(models.Model):
     used_id = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="booking_books", default=None
+        User, on_delete=models.CASCADE, related_name="booking_books",
     )
     booked_time = models.TimeField()
     booked_date = models.DateField()
