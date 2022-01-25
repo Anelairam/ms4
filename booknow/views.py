@@ -9,11 +9,10 @@ def booknow(request):
     if request.method == "POST":
         form = BookForm(request.POST)
         if form.is_valid():
-            form.save()
-            # instance = form.save(commit=False)
-            # instance.used_id = request.User
-            # instance.save()
-            messages.success(request, 'You have requested a booking we will it as soon as possible')
+            instance = form.save(commit=False)
+            instance.used_id = request.user
+            instance.save()
+            messages.success(request, 'You have requested a booking we will confirm it as soon as possible')
             return redirect('../booking')
             
     form = BookForm()

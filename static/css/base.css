@@ -290,6 +290,7 @@ footer {
     
     #base_container {
         min-height: 81vh;
+        width: 70%;
     }
 
     #index_wrapper {

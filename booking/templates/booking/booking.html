@@ -71,7 +71,7 @@
             <div id="booked">
               <h3>Here are all the comfirmed bookings</h3>
               {% for booking in booked %}
-                {% if booking.used_id == user.username %}
+                {% if booking.used_id|lower == user.username|lower %}
                   <div class="row">
                     <div class="col">
                       <h2 class="title">{{ booking.booked_date|date:'l dS M Y' }} at {{ booking.booked_time|date:'H:i' }}</h2>
@@ -96,7 +96,7 @@
             <div id="pending">
               <h3>Here are all the pending bookings</h3>
               {% for pend in pending %}
-                {% if booking.used_id == user.username %}
+                {% if pend.used_id|lower == user.username|lower %}
                   <div class="row">
                     <div class="col">
                       <h2 class="title">{{ pend.booked_date|date:'l dS M Y' }} at {{ pend.booked_time|date:'H:i' }}</h2>

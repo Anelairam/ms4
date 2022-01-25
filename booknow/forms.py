@@ -7,7 +7,8 @@ class BookForm(forms.ModelForm):
 
     class Meta:
         model = Book
-        fields = '__all__'
+        # fields = '__all__'
+        exclude = ['used_id']
         widgets = {
             'booked_time': forms.TimeInput(attrs={'class':'form-control', 'type':'time'}),
             'booked_date': forms.DateInput(format=('%m/%d/%Y'), attrs={'class':'form-control', 'type':'date'}),

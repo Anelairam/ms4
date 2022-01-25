@@ -7,6 +7,7 @@ TABLES = ((0, "Not assigned"), (1, "1"), (2, "2"), (3, "3"), (4, "4"), (5, "5"),
 GUESTS = ((1, "One"), (2, "Two"), (3, "Three"), (4, "Four"),)
 TYPE = ((0, "Not assigned"), (1, "Lunch"), (2, "Dinner"),)
 
+
 class Book(models.Model):
     used_id = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="booking_books",
