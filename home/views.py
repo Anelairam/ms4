@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from .forms import MyCustomLoginForm
-# SignupForm
-# from the_greenwich.forms import CustomSignupForm
 
 
 def index(request):

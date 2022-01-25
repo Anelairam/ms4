@@ -8,7 +8,8 @@
         <div class="container add_edit_container" >
             <div class="row">
                 <div class="col item_form_content">
-                    <h1 class="form-heading">Hello add new menu item here</h1>
+                    <h1 class="form-heading">Hello {{ user.username}}.</h1> 
+                    <p>You can enter the new dish information below.</p>
                     <form method= "POST">
                         {% csrf_token %}
                         <div class="form-row">
