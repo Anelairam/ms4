@@ -1,4 +1,5 @@
-from allauth.account.forms import LoginForm, SignupForm
+from allauth.account.forms import LoginForm
+#  SignupForm
 
 
 class MyCustomLoginForm(LoginForm):
@@ -9,7 +10,7 @@ class MyCustomLoginForm(LoginForm):
         # You must return the original result.
         return super(MyCustomLoginForm, self).login(*args, **kwargs)
 
-class MySignupForm(SignupForm):
-    def __init__(self, *args, **kwargs):
-        super(SignupForm, self).__init__(*args, **kwargs)
+# class MySignupForm(SignupForm):
+#     def __init__(self, *args, **kwargs):
+#         super(SignupForm, self).__init__(*args, **kwargs)
         
