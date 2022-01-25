@@ -38,7 +38,7 @@ DEBUG = development
 
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), "localhost", "ci-ms4-app.herokuapp.com"]
 
-
+X_FRAME_OPTIONS="SAMEORIGIN"
 # Application definition
 
 INSTALLED_APPS = [
