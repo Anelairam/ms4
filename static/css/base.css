@@ -211,19 +211,6 @@ footer {
     margin-left: 5px;
 }
 
-.message {
-    background-color: rgb(42, 209, 42);
-    margin-bottom: 25px;
-    animation: messageFadeEffect 5s;
-}
-  
-/* Go from zero to full opacity */
-@keyframes messageFadeEffect {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
-
-
 /* Styles for add and edit page */
 /* Styles for main container */
 .add_edit_container {
@@ -284,9 +271,10 @@ footer {
 
 
 /* Responcive css styles */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        padding-right: 0; }
+        padding-right: 0; 
+    }
     
     #base_container {
         min-height: 81vh;
@@ -296,28 +284,215 @@ footer {
         width: 75%;
     }
 
+    #signup_container {
+        width: 80%;
+    }
+
+    #singup_description {
+        text-align: center;
+    }
+
+    #singup_btn {
+        width: 100%;
+    }
+
     #bookings_container {
-        width: 70%;
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    #booked h3,
+    #pending h3 {
+        font-size: 18px;
+    }
+
+    #book_now_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    #book_btn {
+        width: 100%;
+    }
+
+    #menu_container {
+        width: 80%;
+    }
+
+    .message{
+        width: 105%;
+    }
+
+    .add_edit_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    .col form {
+        width: 80%;
+    }
+
+    #update_btn, #add_btn {
+        width: 100%;
+    }
+
+    .item_form_content {
+        margin: 7px;
+        text-align: center;
+    }
+
+    .item_form_content h1{
+        font-size: 20px;
     }
 
   }
 
 @media (max-width: 480px) {
     #base_container {
-        min-height: 81vh;
+        min-height: 85vh;
     }
 
     #index_wrapper {
-        width: 109%;
+        width: 80%;
+    }
+
+    #signup_container {
+        width: 80%;
+    }
+
+    #singup_description {
+        text-align: center;
+    }
+
+    #singup_btn {
+        width: 100%;
+    }
+
+    #bookings_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    #booked h3,
+    #pending h3 {
+        font-size: 18px;
+    }
+
+    #book_now_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    #book_btn {
+        width: 100%;
+    }
+
+    #menu_container {
+        width: 80%;
+    }
+
+    .message{
+        width: 105%;
+    }
+
+    .add_edit_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    .col form {
+        width: 80%;
+    }
+
+    #update_btn, #add_btn {
+        width: 100%;
+    }
+
+    .item_form_content {
+        margin: 7px;
+        text-align: center;
+    }
+
+    .item_form_content h1{
+        font-size: 20px;
     }
 
   }
-/* @media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 768px) {
+    #base_container {
+        min-height: 85vh;
+        width: 81%;
+        margin: auto;
+    }
+
+    #index_wrapper {
+        width: 80%;
+    }
+
+    #signup_container {
+        width: 80%;
+    }
+
+    #book_now_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    #book_btn {
+        width: 100%;
+    }
+
+    .add_edit_container {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    .col form {
+        width: 80%;
+    }
+
+    #update_btn, #add_btn {
+        width: 100%;
+    }
+
+    .item_form_content {
+        margin: 7px;
+        text-align: center;
+    }
+
+
 
 }
-@media screen and (min-width: 1024px) {
 
-}
 @media screen and (min-width: 1366px) {
+    #base_container {
+        min-height: 92vh;
+    }
 
-} */
+    #index_wrapper {
+        width: 40%;
+    }
+
+    #signup_container {
+        width: 40%;
+    }
+
+    #bookings_container {
+        background-color: white;
+        width: 80%;
+        min-height: 81vh;
+    }
+
+    #book_now_container {
+        width: 50%;
+        min-height: 81vh;
+    }
+
+    #menu_container {
+        width: 90%;
+        min-height: 81vh;
+    }
+
+}
