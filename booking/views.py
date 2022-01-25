@@ -2,8 +2,6 @@ from django.shortcuts import render
 from .models import Book
 
 
-# Create your views here.
-
 # Renders the booking data into the booking template
 def booking(request):
     booked = Book.objects.filter(status=1)

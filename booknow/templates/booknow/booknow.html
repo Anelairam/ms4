@@ -16,8 +16,8 @@
                 <div class="col" id="form_content">
                     <form method= "POST">
                         {% csrf_token %}
+                        <!-- form structure when the user is admin -->
                             {% if user.username == "admin" %}
-
                                 <div class="form-row">
                                     <div class="form-group">
                                       {{ form.booked_time|as_crispy_field }}
@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
                             {% else %}
-
+                                <!-- form structure when the user is simple user -->
                                 <div class="form-row">
                                     <div class="form-group">
                                     {{ form.booked_time|as_crispy_field }}
@@ -80,27 +80,13 @@
                                     {{ form.status|as_crispy_field }}
                                     </div>
                                 </div>
-                                <!-- <div class="form-row">
-                                    <div class="form-group">
-                                    {{ form.booked_time|as_crispy_field }}
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                    {{ form.booked_date|as_crispy_field }}
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                    {{ form.guests_num|as_crispy_field }}
-                                    </div>
-                                </div> -->
                             {% endif %}
                         <button type="submit" class="btn btn-success" id="book_btn">Book Now</button>
                     </form>
                 </div>
             </div>
         {% else %}
+        <!-- Content when not authorized user tries to reach the data -->
             <div class="row">
                 <div class="col">
                     <h1>You need to be logged in to see the content of this page.</h1>

@@ -15,22 +15,6 @@ for (var i=0; i<= book_title.length; i++){
     });
 }
 
-// Tab animation and active effect on Login and Signup tab bar
-function activeTab(btn_name){
-    for (var i=0; i<tablinks.length; i++){
-        tablinks[i].classList.remove("active");
-        tabcontent[i].style.display = "none";
-    }
-    if (btn_name == "login"){
-        login_tab.classList.add("active");
-        login.style.display = "block";
-    }
-    else if (btn_name == "signup"){
-        signup_tab.classList.add("active");
-        signup.style.display = "block";
-    }
-}
-
 // Disables past dates in form
 function todayDate(){
     var date_field = document.getElementById("date_item");

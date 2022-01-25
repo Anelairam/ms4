@@ -1,9 +1,10 @@
 from django.test import TestCase
 from .form import addItemForm
 
-# Create your tests here.
+
 class test_addItemForm(TestCase):
 
+    # Test of the Add Item form
     def test_item_title_is_required(self):
         form = addItemForm({'title': ''})
         self.assertFalse(form.is_valid())

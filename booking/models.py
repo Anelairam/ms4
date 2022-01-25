@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 STATUS = ((0, "Pending"), (1, "Booked"))
-TABLES = ((0, "Not assigned"), (1, "1"), (2, "2"), (3, "3"), (4, "4"), (5, "5"), (6, "6"), (7, "7"), (8, "8"), (9, "9"))
+TABLES = ((0, "Not assigned"), (1, "1"), (2, "2"), (3, "3"), (4, "4"),
+          (5, "5"), (6, "6"), (7, "7"), (8, "8"), (9, "9"))
 GUESTS = ((1, "One"), (2, "Two"), (3, "Three"), (4, "Four"),)
 TYPE = ((0, "Not assigned"), (1, "Lunch"), (2, "Dinner"),)
 

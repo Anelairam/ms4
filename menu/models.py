@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 ITEM_TYPE = {(0, "Starter"), (1, "Main Course"), (2, "Dessert")}
 
 
@@ -10,6 +10,7 @@ class menu_item(models.Model):
     price = models.DecimalField(max_digits=4, decimal_places=2)
     created_on = models.DateField(auto_now_add=True)
     item_category = models.IntegerField(choices=ITEM_TYPE)
+
 
     def __str__(self):
         return self.title
