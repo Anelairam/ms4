@@ -33,21 +33,13 @@
                                       {{ form.menu_type|as_crispy_field }}
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                      {{ form.table_num|as_crispy_field }}
-                                    </div>
-                                </div>
+
                                 <div class="form-row">
                                     <div class="form-group">
                                       {{ form.guests_num|as_crispy_field }}
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                      {{ form.status|as_crispy_field }}
-                                    </div>
-                                </div>
+                                
                             {% else %}
                                 <!-- form structure when the user is simple user -->
                                 <div class="form-row">
@@ -65,21 +57,13 @@
                                     {{ form.menu_type|as_crispy_field }}
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                    {{ form.table_num|as_crispy_field }}
-                                    </div>
-                                </div>
+                                
                                 <div class="form-row">
                                     <div class="form-group">
                                     {{ form.guests_num|as_crispy_field }}
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                    {{ form.status|as_crispy_field }}
-                                    </div>
-                                </div>
+                                
                             {% endif %}
                         <button type="submit" class="btn btn-success" id="book_btn">Book Now</button>
                     </form>

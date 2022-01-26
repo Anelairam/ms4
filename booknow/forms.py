@@ -6,7 +6,7 @@ class BookForm(forms.ModelForm):
 
     class Meta:
         model = Book
-        exclude = ['used_id']
+        exclude = ['used_id', 'status', 'table_num']
         widgets = {
             'booked_time':
             forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
