@@ -39,6 +39,7 @@ DEBUG = "DEVELOPMENT" in os.environ
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), "localhost", "ci-ms4-app.herokuapp.com"]
 
 X_FRAME_OPTIONS="SAMEORIGIN"
+X_FRAME_OPTIONSs: ALLOW-FROM http://ami.responsivedesign.is
 # Application definition
 
 INSTALLED_APPS = [
