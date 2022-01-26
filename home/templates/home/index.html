@@ -5,6 +5,15 @@
 {% block content %}
 <!-- Signup and login table tab -->
 <div class="row" id="index_wrapper">
+    {% if messages %}
+        {% for message in messages %}
+          <div class="row alert alert-success message" role="alert">
+            <div class="col">
+              {{ message }}
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
     <div class="row">
         <div class="col" id="container_title">
             <h3>Login</h3>

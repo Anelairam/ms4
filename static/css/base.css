@@ -17,37 +17,22 @@ body {
     background-size: 600px;
 }
 
+header {
+    background-color: #323232;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #logo {
     font-family: 'Oooh Baby', cursive;
     color: white;
     text-decoration: none;
+    margin-right: 723px;
 }
 
-.container-fluid {
-    justify-content: center;
-}
-
-.head_row {
+#navbar{
     background-color: #323232;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    height: 75px;
-    line-height: 50px;
-}
-
-.nav_bar ul li{
-    display: inline;
-    margin: 25px 10px 0 10px;
-}
-
-li {
-    list-style-type: none;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
 }
 
 #base_container{
@@ -66,6 +51,10 @@ footer {
     text-align: center;
     margin-bottom: 0;
 }
+
+.container-fluid p{
+    margin-top: 10px;
+}
 /* end of styles for base.html */
 
 
@@ -76,7 +65,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 15% auto; */
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
@@ -292,15 +280,57 @@ footer {
     margin: 25px auto;
 }
 
+/* Styles info page */
+#info_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 20%;
+    min-height: 20vh;
+}
+
+#information{
+    margin: 20px auto;
+}
+
 /* Responcive css styles */
 @media (max-width: 376px) {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         padding-right: 0; 
     }
-    
-    #base_container {
-        min-height: 81vh;
-        width: 70%;
+    header {
+        background-color: #323232;
+        display: block;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbar button{
+        margin-right: 40px;
+    }
+
+    #navbarNav{
+        margin-left: 25px;
+    }
+
+    #logo{
+        margin: auto 25px;
+    }
+
+    footer {
+        height: 75px;
+    }
+
+    .auth_message_container{
+        min-height: 50vh !important;
+    }
+
+    #logout_container {
+        width: 80%;
     }
 
     #index_wrapper {
@@ -322,6 +352,7 @@ footer {
     #bookings_container {
         width: 80%;
         margin: 35px auto;
+        min-height: 90vh;
     }
 
     #booked h3,
@@ -368,11 +399,45 @@ footer {
         font-size: 20px;
     }
 
+    #info_container {
+        width: 94%;        
+    }
+
+    #info_container h2{
+       margin-top: 10px;        
+    }
+
   }
 
 @media (max-width: 480px) {
-    #base_container {
-        min-height: 85vh;
+    header {
+        background-color: #323232;
+        display: block;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbar button{
+        margin-right: 40px;
+    }
+
+    #navbarNav{
+        margin-left: 25px;
+    }
+
+    #logo{
+        margin: auto 25px;
+    }
+
+    footer {
+        height: 75px;
+    }
+
+    #logout_container {
+        width: 80%;
     }
 
     #index_wrapper {
@@ -440,10 +505,49 @@ footer {
         font-size: 20px;
     }
 
+    #info_container {
+        width: 80%;        
+    }
+
+    #info_container h2{
+       margin-top: 13px;        
+    }
+
   }
 
 
 @media screen and (min-width: 768px) {
+    header {
+        background-color: #323232;
+        display: block;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbar button{
+        margin-right: 40px;
+    }
+
+    #navbarNav{
+        margin-left: 149px;
+    }
+    
+
+    #logo{
+        margin: auto 25px;
+    }
+
+    footer {
+        height: 75px;
+    }
+
+    #logout_container {
+        width: 80%;
+    }
+
     #base_container {
         min-height: 85vh;
         width: 81%;
@@ -486,10 +590,21 @@ footer {
     }
 
 
+    #info_container {
+        width: 65%;        
+    }
+
+    #info_container h2{
+       margin-top: 13px;        
+    }
 
 }
 
 @media screen and (min-width: 1366px) {
+    #navbarNav {
+        margin-left: 60%;
+    }
+
     #base_container {
         min-height: 90vh;
     }
@@ -515,7 +630,7 @@ footer {
 
     #menu_container {
         width: 90%;
-        min-height: 81vh;
+        min-height: 50vh;
     }
 
 }
