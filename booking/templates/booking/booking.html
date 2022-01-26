@@ -16,15 +16,16 @@
       <!-- Booking information -->
       <!-- Booking information for admin role-->
       {% if user.username == "admin" %}
-        <div class="row description">
+        <div class="row">
           <div class="col">
-            <h1>Hello {{ user.username}} here are all the bookings </h1>
+            <h1 class="description">Hello {{ user.username}} here are all the bookings </h1>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <div id="booked">
               <h3>Comfired bookings</h3>
+              <hr>
               {% for booking in booked %}
                   <div class="row">
                     <div class="col">
@@ -38,15 +39,15 @@
                             do not hesitate to contact us</p>
                       </div>
                     </div>
-                    <hr>
                   </div>
               {% endfor %}
           </div>
         </div>
-        <div class="row">
+        <div class="row pending">
           <div class="col">
             <div id="pending">
               <h3>Pending bookings</h3>
+              <hr>
                 {% for pend in pending %}
                     <div class="row">
                       <div class="col">
@@ -60,7 +61,6 @@
                               do not hesitate to contact us</p>
                         </div>
                       </div>
-                      <hr>
                     </div>
                   {% endfor %}
             </div>
@@ -70,8 +70,14 @@
       <!-- Booking information for simple user role-->
         <div class="row">
           <div class="col">
+            <h1 class="description">Hello {{ user.username}} here are your bookings </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
             <div id="booked">
               <h3>Comfirmed bookings</h3>
+              <hr>
               {% for booking in booked %}
                 {% if booking.used_id|lower == user.username|lower %}
                   <div class="row">
@@ -86,7 +92,6 @@
                             do not hesitate to contact us</p>
                       </div>
                     </div>
-                    <hr>
                   </div>
                 {% endif %}
               {% endfor %}
@@ -97,6 +102,7 @@
           <div class="col">
             <div id="pending">
               <h3>Pending bookings</h3>
+              <hr>
               {% for pend in pending %}
                 {% if pend.used_id|lower == user.username|lower %}
                   <div class="row">
@@ -111,7 +117,6 @@
                             do not hesitate to contact us</p>
                       </div>
                     </div>
-                    <hr>
                   </div>
                 {% endif %}
               {% endfor %}

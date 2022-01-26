@@ -114,6 +114,18 @@ footer {
     justify-content: center;
 }
 
+#booked h3 {
+    text-align: center;
+}
+
+#pending h3 {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
 .form-heading {
     text-align: center;
     margin-top: 25px;
@@ -124,6 +136,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.pending {
+    margin-top: 25px;
 }
 
 .col form {
@@ -148,20 +164,22 @@ footer {
 }
 
 .description {
-    margin: 25px 0;
+    margin: 50px 0;
 }
 
 .title {
     text-decoration: underline;
+    text-align: center;
 }
 
 .title:hover {
     cursor: pointer;
-    color: #b4ebc2;
+    color: #38c577;
 }
 
 .book_information {
     display: none;
+    text-align: center;
 }
 
 .info_display {

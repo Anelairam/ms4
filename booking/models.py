@@ -24,3 +24,6 @@ class Book(models.Model):
 
     class Meta:
         ordering = ["-created_on"]
+
+    def __str__(self):
+        return self.booked_date

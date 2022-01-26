@@ -16,13 +16,9 @@
         {% endif %}
         <div class="row page_description">
             <div class="col">
-                <h2>The greenwich menu</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Pellentesque gravida odio sem, a vestibulum ipsum suscipit et. 
-                    Sed ut diam purus. Morbi aliquet dictum magna, ac placerat mi ullamcorper in. 
-                    In vulputate placerat velit, ut euismod urna semper at. 
-                    Proin tempus maximus ipsum eu tincidunt. Maecenas mattis tempus diam, ac tempor ligula vestibulum imperdiet. 
-                    Nullam bibendum non mi ac ultricies. Donec vestibulum iaculis est sed tempus.
+                <h2><i class="fas fa-utensils"></i> Menu <i class="fas fa-utensils"></i></h2>
+                <p>A large variety of options and choices are listed in our menus. <br>
+                    In case you have any questions regarging ingredients and allergies please do not hesitate to call us!
                 </p>
             </div>
             {% if  user.username == "admin" %}
@@ -33,9 +29,7 @@
         <div class="row">
             <div class="col">
                 <div class="dish_type_title">
-                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="left">
                     <h2>Starters</h2>
-                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="right">
                 </div>
                 <hr>
                 {% for starter in starters %}
@@ -67,9 +61,7 @@
         <div class="row">
             <div class="col">
                 <div class="dish_type_title">
-                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="left">
                     <h2>Main Course</h2>
-                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="right">
                 </div>
                 <hr>                
                 {% for main in mains %}
@@ -101,9 +93,7 @@
         <div class="row">
             <div class="col">
                 <div class="dish_type_title">
-                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="left">
                     <h2>Deserts</h2>
-                    <img src="https://res.cloudinary.com/dmgrh8ekr/image/upload/v1641499227/greenwich/floral-design_oqkhlj.png" alt="floral-menu-title0decoration" class="right">
                 </div>
                 <hr>
                 {% for desert in deserts %}
