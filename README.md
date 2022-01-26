@@ -51,63 +51,40 @@ There are two roles currently available in the website the role of an admin user
 ### Users visiting the website would be:
 
 * Anyone who has access to the internet
-* Want to make a booking
-* want to see the restaurant's menu
-* Want to manipulate the data of the menu dishes and bookings
+* Want to make a booking or reservation
+* want to see the restaurant's menu and information
 
 ### Admin users on the website will be able to:
 
 * Keep up to date the menu dishes
 * Request or make a booking
 * Confirm reservations from the back end 
+* Want to manipulate the data of the menu dishes
+
+#### Future Admin users features:
+* Booking manipulation and confirmation from the front end
+* Valiadted pick options for bookings without all times and option available to avoid double bookings
+* History tab of past bookings
 
 ### Simple users on the website will be able to:
 
 * Request/make a booking
 * Navigate freely through the website's information
+* 
+#### Future users features:
+* Auto grnerated booking fields with only available options based on the other bookings 
+* Ability to make a booking without the need of comfirmation from the administrators
+* Abitily to edit and delete ongoing or current bookings
+* History tab of past bookings
 
 
+### User Stories
 
+#### Site Owner goals
 
-
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Marialena Livathinopoulou,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
+- The site owners must be able to access the back-end as superusers
+- The site owners must be able to change status of the bookings from the back end
+- The site owners must be able to add, remove or update menu items
 
 ## Release History
 
