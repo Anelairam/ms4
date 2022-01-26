@@ -118,6 +118,7 @@ Together with the following tools
 * GitHub 
 * GitPod
 * Heroku
+* Cloudinary
 
 ## Testing & Validation
 
