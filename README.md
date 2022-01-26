@@ -12,15 +12,16 @@
   Expand
 </summary>
   
-  * [Introduction](#introduction)
-  * [User Experience (UX)](#user-experience-(ux))
-  * [Design](#design)
-  * [Technologies](#technologies)
-  * [Testing](#testing)
-  * [Deployment](#deployment)
-  * [Credits](#credits)
-    * [Resources](#resources)
-    * [Media](#media)
+  * Introduction
+  * Wireframes
+  * User Experience (UX)
+  * Design
+  * Technologies
+  * Testing
+  * Deployment
+  * Credits
+  * Content
+    
     
 </details>
  
@@ -30,7 +31,20 @@ The web application is named Food Court, and it is booking management system for
 The bookings of the users are held in a linked database. When a user creates an account he/she is ready to make their first booking and navigate freely through the web application.
 There are two roles currently available in the web application the role of an admin user and the role of a normal user both the will be described further below.
 
----
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Wireframes
+
+### Desktop page layout
+
+![image](https://user-images.githubusercontent.com/25570623/151154876-c7f6e96d-d552-43da-8648-6e1934fe224d.png)
+
+### Mobile page layout
+
+![image](https://user-images.githubusercontent.com/25570623/151155416-260b7861-948a-4356-89fb-fec990c273e9.png)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## User Experience
 
 ### Ideal User
@@ -58,7 +72,6 @@ There are two roles currently available in the web application the role of an ad
 * Request/make a booking
 * Navigate freely through the web application's information and forms
 
-
 #### Future users features:
 * Auto grnerated booking fields with only available options based on the other bookings, available days and hours.
 * Abitily to edit and delete pending or comfired bookings.
@@ -71,6 +84,8 @@ There are two roles currently available in the web application the role of an ad
 - The site owners must be able to access the back-end as superusers.
 - The site owners must be able to change status of the bookings from the back end.
 - The site owners must be able to add, remove or update menu items from back and front end.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Design
 
@@ -90,21 +105,15 @@ The icons used where from font awesome as there the most reliable and helpful.
 
 ### Responsive
 
-**368**
 ![image](https://user-images.githubusercontent.com/25570623/151141097-b27eb41c-fc27-4574-a8d4-8135180f8105.png)
 
-**768**
 ![image](https://user-images.githubusercontent.com/25570623/151134048-81237d9e-b7eb-43a9-85a2-88a8dbfc070b.png)
 
-**1024**
 ![image](https://user-images.githubusercontent.com/25570623/151134257-2dca0ca3-4148-4f8d-b879-de8dba2ddb35.png)
 
-**1440**
 ![image](https://user-images.githubusercontent.com/25570623/151134562-74455ff5-4a84-4fb9-bc0f-94ff58b102fa.png)
 
-
-
-------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Technologies
 The technologies used for the web application are:
@@ -120,6 +129,8 @@ Together with the following tools
 * Heroku
 * Cloudinary
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Testing & Validation
 
 - A round of testings happened due to the entire deployment of the project, mostly used tool for the testing was the browsers development tools.
@@ -133,6 +144,15 @@ Together with the following tools
 ### Css code validation with [W3 validator]( https://jigsaw.w3.org/css-validator/).
 ![image](https://user-images.githubusercontent.com/25570623/151073456-e68252ef-377d-41c7-997b-1d1e7105ec89.png)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Deployment
+
+- The application was deployed in heroku please check [here!]( https://ci-ms4-app.herokuapp.com/)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Credits
 
@@ -142,11 +162,16 @@ In this stage I would like to credit:
 - CI's tutor support for the tremendous assistance on understanding the function of the rendered forms, their fields and the manipulation of them. Add their assistance of a deploymnet issue that occured the last minute.
 - Slack community providing great information and sollutions from people that faced and facing exactly the same obstacles
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Content
 
 -  Google fonts: Oooh Baby designed by Robert Leuschkewas.
 -  Fontawesome: all icons included in the project.
 -  Plain Pattern: [Plain Pattern]( http://www.kennethcachia.com/plain-pattern/app/) for the creation of the background.
+-  Information page, information from Technopolis Athens
 
 Thank you!
+
+
+
