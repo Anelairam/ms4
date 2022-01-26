@@ -3,6 +3,8 @@
 ---
 ## Project: Food Court (Milestone project 4)
 
+### [Deployed website]( https://ci-ms4-app.herokuapp.com/)
+
 ## Table of Contents
 
 <details>
@@ -33,44 +35,42 @@ There are two roles currently available in the web application the role of an ad
 
 ### Ideal User
 
-### Users visiting the web application would be:
+### Users visiting the web application would be anyone who:
 
-* Anyone who has access to the internet
-* Want to make a booking or reservation
-* want to see the restaurant's menu and information
+* Has access to the internet.
+* Want to make a booking or reservation.
+* Want to see the restaurant's menu and information.
 
 ### Admin users on the web application will be able to:
 
-* Keep up to date the menu dishes
-* Request or make a booking
-* Confirm reservations from the back end 
-* Want to manipulate the data of the menu dishes
+* Keep up to date the menu dishes.
+* Request or make a booking.
+* Confirm reservations from the back end .
+* Manipulate the data of the menu both front and back end.
 
 #### Future Admin users features:
-* Booking manipulation and confirmation from the front end
-* Valiadted pick options for bookings without all times and option available to avoid double bookings
-* History tab of past bookings
+* Booking manipulation and confirmation from the front end.
+* Valiadateed options for bookings based on the opening hours, the available present day and future days and available sitting.
+* History tab of past bookings either confirmed or cancel
 
 ### Simple users on the web application will be able to:
 
 * Request/make a booking
-* Navigate freely through the web application's information
+* Navigate freely through the web application's information and forms
 
 
 #### Future users features:
-* Auto grnerated booking fields with only available options based on the other bookings 
-* Ability to make a booking without the need of comfirmation from the administrators
-* Abitily to edit and delete ongoing or current bookings
-* History tab of past bookings
-
+* Auto grnerated booking fields with only available options based on the other bookings, available days and hours.
+* Abitily to edit and delete pending or comfired bookings.
+* History tab of previous bookings which the user attended.
 
 ### User Stories
 
 #### Site Owner goals
 
-- The site owners must be able to access the back-end as superusers
-- The site owners must be able to change status of the bookings from the back end
-- The site owners must be able to add, remove or update menu items
+- The site owners must be able to access the back-end as superusers.
+- The site owners must be able to change status of the bookings from the back end.
+- The site owners must be able to add, remove or update menu items from back and front end.
 
 ## Design
 
@@ -119,9 +119,12 @@ Together with the following tools
 * GitPod
 * Heroku
 
-## Testing ^ Validation
+## Testing & Validation
 
-The web application was tested manually and locally due to some unfortunate issues which affect the deployed application till now.
+- A round of testings happened due to the entire deployment of the project, mostly used tool for the testing was the browsers development tools.
+- Forms and views are tested throught with the help of the TestCast from Django.
+- During the testing stages it was noticed that there was a kind of a bug that affects till now the responsiveness in the deployed application on the browser.
+- However, everything is working with in the browsers' development tools. 
 
 ### Html code validation with [W3 validator]( https://validator.w3.org/).
 ![image](https://user-images.githubusercontent.com/25570623/151073086-1b9a95e4-7b81-4949-aad7-fb9a734548e1.png)
@@ -129,10 +132,20 @@ The web application was tested manually and locally due to some unfortunate issu
 ### Css code validation with [W3 validator]( https://jigsaw.w3.org/css-validator/).
 ![image](https://user-images.githubusercontent.com/25570623/151073456-e68252ef-377d-41c7-997b-1d1e7105ec89.png)
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Credits
 
----
+In this stage I would like to credit:
 
-Happy coding!
+- My mentor for fantastic support and guidance provided through our meetings and slack conversations.
+- CI's tutor support for the tremendous assistance on understanding the function of the rendered forms, their fields and the manipulation of them. Add their assistance of a deploymnet issue that occured the last minute.
+- Slack community providing great information and sollutions from people that faced and facing exactly the same obstacles
+
+
+## Content
+
+-  Google fonts: Oooh Baby designed by Robert Leuschkewas.
+-  Fontawesome: all icons included in the project.
+-  Plain Pattern: [Plain Pattern]( http://www.kennethcachia.com/plain-pattern/app/) for the creation of the background.
+
+Thank you!
