@@ -117,18 +117,21 @@ WSGI_APPLICATION = 'the_greenwich.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-if "DEVELOPMENT" in os.environ:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-else:
-    DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    }
+# if "DEVELOPMENT" in os.environ:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+# else:
+#     DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+#     }
 
+DATABASES = {
+    'default': dj_database_url.parse("postgres://bdvxlnzbqipntf:527169ab7b72f4fbaea3f028bc4f09d02d16e61f42b62d8f7cb9e3902222facd@ec2-52-31-217-108.eu-west-1.compute.amazonaws.com:5432/d3mhpvuaef477p")
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
